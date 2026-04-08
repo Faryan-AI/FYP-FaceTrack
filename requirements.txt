@@ -1,0 +1,10 @@
+streamlit
+streamlit-webrtc
+opencv-python
+numpy
+pandas
+scikit-learn
+onnxruntime
+mediapipe
+av
+plotly
