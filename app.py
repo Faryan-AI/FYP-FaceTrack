@@ -7,7 +7,31 @@ from sklearn.metrics.pairwise import cosine_similarity
 import onnxruntime as ort
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 import mediapipe as mp
-import plotly.express as px
+import plotly.express as px|
+import os
+import urllib.request
+
+def download_file(url, filename):
+    if not os.path.exists(filename):
+        print(f"Downloading {filename}...")
+        urllib.request.urlretrieve(url, filename)
+        print(f"{filename} downloaded")
+
+# Download models automatically
+download_file(
+    "https://huggingface.co/FoivosPar/Arc2Face/resolve/main/arcface.onnx",
+    "arcface.onnx"
+)
+
+download_file(
+    "https://raw.githubusercontent.com/opencv/opencv/master/samples/dnn/face_detector/deploy.prototxt",
+    "deploy.prototxt"
+)
+
+download_file(
+    "https://github.com/opencv/opencv_3rdparty/raw/dnn_samples_face_detector_20170830/res10_300x300_ssd_iter_140000.caffemodel",
+    "res10_300x300_ssd_iter_140000.caffemodel"
+)
 
 st.set_page_config(layout="wide")
 
