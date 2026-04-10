@@ -8,3 +8,4 @@ onnxruntime
 mediapipe
 av
 plotly
+opencv-python-headless==4.10.0.84
