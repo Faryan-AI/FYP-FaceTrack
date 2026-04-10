@@ -1,6 +1,5 @@
 streamlit
 streamlit-webrtc
-opencv-python
 numpy
 pandas
 scikit-learn
@@ -9,3 +8,5 @@ mediapipe
 av
 plotly
 opencv-python-headless==4.10.0.84
+mediapipe==0.10.14
+opencv-python-headless
