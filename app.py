@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import onnxruntime as ort
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 import mediapipe as mp
-import plotly.express as px|
+import plotly.express as px
 import os
 import urllib.request
 
